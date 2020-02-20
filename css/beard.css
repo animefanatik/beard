@@ -1,0 +1,149 @@
+
+/* Import Fonts*/
+@font-face {
+    font-family: "AltGot";
+    src: url('../fonts/Alternate-Gothic.ttf');
+    src: url('../fonts/Alternate-Gothic.ttf') format("truetype");
+}
+@font-face {
+    font-family: "Chaparral";
+    src: url('../fonts/ChaparralPro-Regular.otf');
+    src: url('../fonts/ChaparralPro-Regular.otf') format("opentype");
+}
+@font-face {
+    font-family: "ChaparralItal";
+    src: url('../fonts/ChaparralPro-Italic.otf');
+    src: url('../fonts/ChaparralPro-Italic.otf') format("opentype");
+}
+@font-face {
+    font-family: "ChaparralBold";
+    src: url('../fonts/ChaparralPro-Bold.otf');
+    src: url('../fonts/ChaparralPro-Bold.otf') format("opentype");
+}
+@font-face {
+    font-family: "Intro";
+    src: url('../fonts/Intro.otf');
+    src: url('../fonts/Intro.otf') format("opentype");
+}
+
+/* Main Font Styles*/
+body {font-family: 'Chaparral', 'Times New Roman', Times, serif; letter-spacing: 0.0625em; line-height: 1.428571429;}
+h1 {font-family: 'Intro', Arial, Helvetica, sans-serif;}
+h2, h3, nav, .fontAltGot {font-family: 'AltGot', Impact, 'Arial Narrow Bold', sans-serif;}
+h2 {font-size: 24px;}
+h3 {font-size: 18px;}
+p {margin-bottom: 1rem;}
+.p1 {font-size: 15px;/* original shows font-size:16px, however it seems different quite smaller so I used 15px instead */}
+.p2 {font-size: 13px;/* original shows font-size:14px, however it seems different quite smaller so I used 13px instead */}
+.p3 {font-size: 9px;/* original shows font-size:10px, however it seems different quite smaller so I used 9px instead */}
+.padTopDeco h1 {font-size: 24px; text-align: center; margin-bottom: 80px;}
+i, em {font-family: 'ChaparralItal','Trebuchet MS'; } 
+b, strong {font-family: 'ChaparralBold','Trebuchet MS';}
+
+/* Structure */
+body {background: #333;}
+#hero, #features, #carrouselArea, #crew, #store, #email, #footer {width:100%; max-width: 1280px; margin: 0 auto;}
+#features, #crew, #footer {background: #FFF; padding: 100px 0 25px; margin: 0 auto;}
+#featuresContainer, #crewContainer, #footerContainer {width: 90%; max-width: 965px; margin: 0 auto; display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap;}
+.padTopDeco, #crew {padding:80px 0 100px; background: #FFF url('../img/decorator.png') top center no-repeat; }
+#crew {padding-bottom: 25px;}
+
+/* Hero - Specific Syles */
+#hero {background: url('../img/bg_home.png'); background-size: cover; color: #FFF; text-align: center; padding: 50px 0 110px;}
+.topnav {display: flex; flex-direction: row; width:100%; max-width: 1200px; margin: 0 auto; justify-content: space-evenly;}
+.topnav #logo {margin-top: -10px;}
+.topnav a {font-size: 20px; color: #FFF; text-decoration: none;}
+.topnav a:hover {text-decoration: underline;}
+.topnav .icon {display: none;} 
+#hero h1 {font-size: 44px; width: 75%; max-width: 993px; margin: 70px auto 0; letter-spacing: 3px;}
+#hero p {font-size: 26px; width: 80%; max-width: 500px; margin: 25px auto 50px;}
+#needThis {text-align: center;color: #000; background: #FFF; border-radius:25px; font-size: 22px; padding: 10px 65px; text-decoration: none;}
+#needThis:hover {background: rgb(255, 255, 255, 0.75)}
+
+/* features - Specific Syles */
+#features section {text-align: center; width: 275px; margin-bottom: 75px;}
+#features section h2 {margin: 30px 0;}
+#features section p {line-height: 20px;}
+
+/* crew - Specific Styles */
+#crewContainer {width: 90%; max-width: 965px;}
+#crew section {text-align: center; width: 290px; margin-bottom: 75px;}
+#crew h3 {margin: 38px auto 20px;}
+#crew section p {font-size:15px; line-height: 20px; margin: 15px 0;}
+#crew section p:first-of-type {font-size: 13px; margin-top: 0;} 
+#crew section i {font-family: 'ChaparralItal','Trebuchet MS';}
+
+/* email - Specific Styles */
+#email h1 {margin-bottom: 55px;}
+#emailForm {display: flex; border: 1px solid #000; border-radius: 25px; padding: 10px 25px; width: 90%; max-width: 440px; margin: 0 auto;align-items: center; justify-content: space-between;}
+#emailForm input {border: 0; width: 80%; font-size: 20px; color: #999; font-family: 'Chaparral', 'Times New Roman'; letter-spacing: 2px; padding-left: 15px;}
+#emailForm button {border: 0; background: #FFF; font-size: 20px; }
+#email .p3 {text-align: center; margin-top: 10px;}
+
+/* email - Specific Styles */
+#footer {background: #000; padding: 65px 0 100px; color: #FFF;}
+#footer img {flex-shrink: 0; width: 61px; height: 54px;}
+#contactCol {width: 205px;}
+.footerFlex i {color: #666;}
+.footerFlex {width: 125px;}
+.footerFlex a {color: #FFF; font-family: 'Chaparral', 'Times New Roman'; margin-bottom: 21px; text-decoration: none;}
+.footerFlex a:hover, .footerFlex nav a:active {font-weight: bold; }
+.footerFlex {display: flex; flex-direction: column;}
+
+/* Carousel Styles */
+.slick-prev {left: 75px; z-index: 100; background: #000 url('../img/leftArrow.png') center center no-repeat;}
+.slick-next {right: 75px; z-index: 100; background: #000 url('../img/rightArrow.png') center center no-repeat;}
+.slick-prev, .slick-next {
+    font-size: 0; line-height: 0; position: absolute; top: 45%; display: block; width: 50px; height: 50px; padding: 0; cursor: pointer; border: none; outline: none;
+    -webkit-transform: translate(0, -50%); -ms-transform: translate(0, -50%); transform: translate(0, -50%);
+}
+.slick-slide {margin: 0 10px;}
+.slick-slide img {width: 100%;}
+.slick-dots {margin: 0 auto; text-align: center;}
+.slick-dots li {border: 0; height: 2px; width: 17%; margin: 20px 0px; display: inline-block; background:rgb(192, 192, 192);}
+.slick-dots li button {width: 100%; border: 0px; font-size: 0; height: 2px; background: #FFF;}
+.slick-dots li.slick-active {background: #666;}
+
+/* Store items - Woocommerce Styles*/
+#storeItems {display: flex; flex-direction: row; align-items: center; justify-content: space-between; width: 90%; max-width: 1000px; margin: 0 auto;}
+.storeItem {display: flex; flex-direction: column; width: 232px;}
+.storeItem img {width: 100%;}
+.storeItem h3 a {color: #000; text-decoration: none; display: block; margin: 25px 0 25px; height:50px;}
+.storeItem p {font-size: 11px;}
+.storeItem .itemFooter {display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+.storeItem .price {font-style: italic;}
+.storeItem .button {display: block; border: 1px solid #000; text-align: center; font-family: 'AltGot', Impact, 'Arial Narrow Bold', sans-serif; text-decoration: none; color: #000; border-radius: 25px; font-size: 12px; width: 80px; line-height: 18px;}
+.storeItem .button:hover {background: #DDD;}
+
+/* Animations Styles */
+@keyframes zoomIn {
+    0% {opacity: 0; transform: scale(0);}
+    50% {opacity: 0;transform: scale(0);}
+    100% {opacity: 1;transform: scale(1);}
+  }
+  .zoomIn {-webkit-animation-name: zoomIn; animation-name: zoomIn; animation-duration: 0.5s;}
+
+@media screen and (max-width: 785px) {
+    #mainNav {justify-content: space-between; position: absolute; }
+    #logo img {max-width:200px; }
+    .topnav #logo {margin: 25px;}
+    .topnav a {margin-left: 35px; margin-bottom: 15px;}
+    .topnav :nth-child(3) {order: 1;}
+    .topnav :nth-child(1) {order: 2;}
+    .topnav :nth-child(2) {order: 3;}
+    .topnav :nth-child(4) {order: 4;}
+    .topnav :nth-child(5) {order: 5;}
+    .topnav :nth-child(6) {order: 6;}
+    .topnav a:not(:nth-child(3)) {display: none;}
+    .topnav a.icon {float: right; display: block;}
+    .responsive { flex-direction: column; background: rgba(0,0,0,0.7);}
+    .responsive .icon i {transform: rotate(90deg);}
+    .fa-bars {margin: 25px;}
+    #hero h1 {margin-top: 150px;}
+  }
+  
+  @media screen and (max-width: 785px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {position: absolute; right: 0px; top: 0px;}
+    .topnav.responsive a {float: none; display: block; text-align: left;}
+  } 
